@@ -24,6 +24,10 @@ Issues 部分新建一个 Issue，填写对应的标题、描述、Labels、（A
 
 将项目 clone 到本地进行修改，pull 时选择 pull merge 而不是直接 commit to master。您的贡献将经过审核判断是否接受。
 
+## 历史 Error
+
+[history error](documents/historyError.md)
+
 ## 更新日志
 
 1. 2021/07/23 需求分析，项目搭建，明确分工
