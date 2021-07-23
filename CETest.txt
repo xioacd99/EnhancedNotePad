@@ -1,0 +1,25 @@
+近年来，Wujiang District, Suzhou City, Jiangsu Province, vigorously promotes the intelligent transformation and digital transformation of the manufacturing industry。图为近日在位于吴江区盛泽镇的恒力化纤工业丝智能车间，工作人员读取产品信息。
+传统工业企业，转型升级颇受关注。搭上5G这班快车，加速“数字化”到“智慧化”进程，Let traditional industrial enterprises and industrial Internet technology merge and collide, and glow with infinite vitality in the new era。
+Industrial Internet is a deep integration of the information field and the physical manufacturing field，被视为5G的核心应用领域。当5G进入规模部署阶段，工业则是其中最重要的应用领域之一。
+世界5G大会召开在即，The reporter interviewed the director of the National Industrial Process Measurement and Control Standardization Technical Committee、“网络化控制系统”国家地方联合工程研究中心主任、中国科学院沈阳自动化研究所所长于海斌，畅谈5G时代制造业面临的机遇与挑战。
+“工业领域的智能生产需要提升柔性、灵活性、资源效率和产品质量，而5G与automated industry的深度融合，Can improve network connectivity and stability, and create a new architecture for future industrial connections，支撑未来全连接智慧工厂建设。”身处东北老工业基地辽宁，于海斌对工业互联技术在传统工业企业的应用有着深刻理解。
+技术迭代，“自主”与“智能”是关键
+一项革命性技术的成熟，需要技术和应用场景的多轮迭代和不断创新，同时也不乏争议。制造业希望通过工业互联网实现自动化，但大量工业制造知识亟待挖掘。
+于海斌说，工业互联网不仅是一张网，更是互联的工业系统。Industrial systems are developed from interconnected intelligence supported by information networks to knowledge-driven autonomous intelligence, thus realizing autonomy and intelligence.。
+With the gradual landing of 5G applications, commercial 5G technologies and applications have achieved great success，理性看待工业场景应用尤为关键。于海斌表示，工业5G技术及其对工业革命的作用，尚处在初始阶段。
+回顾无线网络技术的应用和发展规律，他认为，工业无线网络技术在自动化领域的应用，从初期的尝试到后期的大规模产品化应用，已验证了无线技术在部分工业领域的可行性，并重点解决了流程工业的大规模工业测控问题。
+“但面向高端加工制造，特别是精密运动控制，由于无线技术尚未达到传统有线网络的效果，始终缺少‘无线’的利器。”于海斌强调。
+At present, industrial wireless technology is showing a flourishing situation, supporting industrial applications from different levels. However, due to the huge differences in industrial application scenarios, it is difficult to have one technology that can support all industrial scenarios at the same time.
+“尽管5G采用场景驱动的技术路线定义了三大场景，但与实时性密切相关的工业应用尚需突破。”于海斌说，由于没有像现场总线、工业以太网一样的知识积累和沉淀，时至今日，5G的应用仍处于不断地应用尝试和技术创新的迭代中。
+“但从目前已经展示出的5G应用创新中，People see a lot of opportunities，如机器人的遥操作远程手术、VR/AR远程示教等，Solved some previously difficult problems。”于海斌说。
+以点带面，实现应用场景与模式创新
+The figures show that 5G links are expected to carry the connection of 1 billion places, 5 billion people, and 50 billion things.。未来，每个人、每个家庭、每个组织都将通过“数字”实现互联互通。
+目前，工业无线技术的全球市场份额只有6%左右，而5G由于刚刚开始应用，份额则更小，但其对推动工业基础设施、生产方式、创新模式等方面的持续变革却很关键，关乎数字经济时代我国制造业发展的主动权和话语权。
+此外，从数字比对中也可以看到我国与其他国家的差距。For example, the processing level of lithography machines in the Netherlands is 5nm, and its lithography machines with 7nm precision and above account for 100% of the world's share, while the level of lithography machines that can be mass-produced in my country is only 90nm. The gap is huge, indicating that challenges and opportunities coexist.
+时代的变革和政策的利好，让工业互联网焕发出无限生机，也让人们对5G时代充满想象。“十四五”期间，突破传统发展模式，推动制造业模式创新，充分发挥我国在移动通信产业的优势，特别是5G技术优势，势在必行。
+“以点带面，通过技术突破，实现应用场景和模式上的创新，从而产生行业辐射作用，推动我国工业企业和产业发展的持续升级，夯实现代化工业体系。”于海斌给出自己的看法，把5G应用于工业并渗透到工业系统，将有利于保持并扩大我国5G的领先优势。
+交叉融合，新技术带给未来无限可能
+20多年来，Yu Haibin led the team to deepen industrial wireless control technology, not only created the world's leading industrial wireless control technology system, but also led the formulation of my country's first International Electrotechnical Commission (IEC) international standard in the field of industrial wireless control-WIA-PA standard，使我国工业无线控制技术达到国际领先水平，有了国际话语权。
+作为我国机器人和工业自动化事业的发源地之一，Shenyang Institute of Automation, Chinese Academy of Sciences continues to promote the research and development of Chinese robotics，解决了国家制造业发展一系列重大关键技术问题。“海翼”水下滑翔机于2017年打破世界水下滑翔机最大下潜深度纪录，“海斗一号”全海深无人潜水器于2020年成功海试最深下潜至10907米，工业4.0互联制造解决方案获评“世界互联网领先科技成果”。
+“在重大科技成果以及特种场景下应用，对5G时代提出了新需求。而未来，5G技术也将在方方面面得到应用，但不能操之过急。”于海斌说，5G应该在不断地技术迭代中，从ICT（信息通信技术）和OT（运营技术）角度共同推动全新的工业无线网络，抓住机遇，争夺技术优势，猛攻“卡脖子”技术，强化核心技术的自主可控性。
+注重底层支撑，思考技术融合。于海斌表示，“人、机、物”全面互联的关键基础设施，5G is the core support of the Industrial Internet. New technologies such as artificial intelligence, big data, industrial computing, 5G, and the industrial Internet of Things are cross-integrated, and various industrial manufacturing, information platforms, and the security of the entire process and the entire chain are cross-integrated.，将是5G技术推动工业革命的载体和途径，产生很多新技术并将形成创新引领能力，为制造业的智能化发展提供无限可能。
