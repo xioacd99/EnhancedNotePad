@@ -1,3 +1,12 @@
+<!--
+ * @Author: xioacd99
+ * @Date: 2021-07-22 23:46:42
+ * @LastEditTime: 2021-07-23 22:40:17
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \.vscode\Github\EnhancedNotePad\README.md
+-->
+
 # EnhancedNotePad
 
 ## 项目简介
@@ -30,4 +39,7 @@ Issues 部分新建一个 Issue，填写对应的标题、描述、Labels、（A
 
 ## 更新日志
 
-1. 2021/07/23 需求分析，项目搭建，明确分工
+1. 2021/07/23
+   1. 需求分析，项目搭建，明确分工
+   2. 实现 BF 字符串匹配、KMP 字符串匹配
+   3. 实现 BF 计数、BST 计数、True 计数、hashTable 计数

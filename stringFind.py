@@ -148,6 +148,11 @@ def strKMPFind(source, target, pos=0, fullWord=True, caseSensitive=False):
             j = 0
     return idx
 
+def strBMFind(source,target,pos=0,fullWord=True,caseSensive=False):
+    pass
+
+def strSundayFind(source,target,pos=0,fullWord=True,caseSensive=False):
+    pass
 
 #
 # function for file
@@ -215,3 +220,9 @@ def fileKMPFind(filename, target):
         with open(filename, 'w') as file:
             print('Create a new file named %s' % filename)
     return results
+
+def fileBMFind(filename,target):
+    pass
+
+def fileSundayFind(filename,target):
+    pass
