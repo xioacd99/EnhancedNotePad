@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a9bd9027-f83c-46fb-9740-00d4b9877dac" name="默认的" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1vhAfaxX74kQnAn0IoA2aZA6Gq6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.github.izhangzhihao.rainbow.brackets.settings.RainbowConfigurable" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a9bd9027-f83c-46fb-9740-00d4b9877dac" name="默认的" comment="" />
+      <created>1627004050507</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627004050507</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="557" y="169" key="FileChooserDialogImpl" timestamp="1627004411814">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="557" y="169" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1627004411814" />
+    <state x="278" y="72" key="SettingsEditor" timestamp="1627004473038">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="278" y="72" key="SettingsEditor/62.0.1474.864@62.0.1474.864" timestamp="1627004473038" />
+  </component>
+</project>
