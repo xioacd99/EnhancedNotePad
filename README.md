@@ -42,4 +42,4 @@ Issues 部分新建一个 Issue，填写对应的标题、描述、Labels、（A
 1. 2021/07/23
    1. 需求分析，项目搭建，明确分工
    2. 实现 BF 字符串匹配、KMP 字符串匹配
-   3. 实现 BF 计数、BST 计数、True 计数、hashTable 计数
+   3. 实现 BF 计数、BST 计数、Trie 计数、hashTable 计数
