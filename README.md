@@ -1,7 +1,7 @@
 <!--
  * @Author: xioacd99
  * @Date: 2021-07-22 23:46:42
- * @LastEditTime: 2021-07-23 22:40:17
+ * @LastEditTime: 2021-07-25 09:20:43
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \.vscode\Github\EnhancedNotePad\README.md
@@ -25,11 +25,47 @@ Issues 部分新建一个 Issue，填写对应的标题、描述、Labels、（A
 
 ### 完善文档
 
+#### 规范
+
+1. 所有文档使用 markdown 编写，放在 documents 文件夹下，文档中引用的图片放在 image 文件夹下（相对路径）。
+
+#### 流程
+
 将项目 clone 到本地进行修改，pull 时选择 pull merge 而不是直接 commit to master。您的贡献将经过审核判断是否接受。
 
-所有文档使用 markdown 编写，放在 documents 文件夹下，文档中引用的图片放在 image 文件夹下（相对路径）。
-
 ### 贡献代码
+
+#### 规范
+
+代码格式细节不做要求，如 if else 是否换行等。下面所说的是**使用 PyCharm ctrl + alt + L 格式化代码后**需要注意的
+
+1. 每一个算法都单独写成一个类，成员函数的命名不需要再包含类的名字，如
+   ```python
+   class KMP:
+      ...
+      def strSearch:
+         ...
+      def filesearch:
+         ...
+      ...
+   ```
+2. 写好的类文件放到对应的文件夹下，如`KMP字符串匹配`算法我们放在了`ENotePadAlgorithm/strFind`文件夹下（这里你也可以看出，如果你扩展的算法不再这些文件夹的范围内，你可以按照`typeOperation`的格式新建文件夹，如`imgGenerate、videoEncode`等）
+3. 当你写好一个算法后，你需要在对应的 test 文件夹下加上对应算法的测试文件
+4. 使用单一驼峰命名法，但是类名和算法文件名首字母可以大写，举例如下
+   正确的：BruteFoce.py, insert, badCharOffset
+   错误的：BF_word_count.py, Insert, BadCharOffset
+5. 每个函数和类都需要添加相应的注释（`vscode koroFileHeader`插件可以帮助你更快地写好注释）
+   ```python
+   # 这是这个插件利用 ctrl + alt + t 快捷键生成的函数注释
+   /**
+    * @description:
+    * @param {*}
+    * @return {*}
+    */
+   ```
+6. 确保你提交的每一个版本都是完全的，不要提交半成品算法
+
+#### 流程
 
 将项目 clone 到本地进行修改，pull 时选择 pull merge 而不是直接 commit to master。您的贡献将经过审核判断是否接受。
 
@@ -42,4 +78,16 @@ Issues 部分新建一个 Issue，填写对应的标题、描述、Labels、（A
 1. 2021/07/23
    1. 需求分析，项目搭建，明确分工
    2. 实现 BF 字符串匹配、KMP 字符串匹配
+<<<<<<< Updated upstream
    3. 实现 BF 计数、BST 计数、True 计数、hashTable 计数
+=======
+   3. 实现 BF 计数、BST 计数、Trie 计数、hashTable 计数
+2. 2021/07/24
+   1. 实现 BM 匹配、Sunday 匹配
+   2. 增加测试数据集（大量）
+   3. Ui 界面基本完成
+   4. 项目文件结构整理
+3. 2021/07/25
+   1. 实现 10 种字符串加密算法
+   2. 代码重构
+>>>>>>> Stashed changes

@@ -1,8 +1,6 @@
-from stringFind import *
-
-if __name__ == '__main__':
-    # ans = strKMPFind('being be are be ','be')
+# if __name__ == '__main__':
+    # ans = strSundayFind('being be are be ','be')
     # print(ans)
-    ans = fileKMPFind('dataset/ENTest.txt', 'be')
-    for singleResult in ans:
-        print(singleResult)
+    # ans = fileKMPFind('testData/ENTest.txt', 'be')
+    # for singleResult in ans:
+    #     print(singleResult)
