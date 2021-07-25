@@ -35,7 +35,7 @@
       <recent name="F:\.vscode\Github\EnhancedNotePad\dataset" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MorseTest">
+  <component name="RunManager" selected="Python.editDistanceTest">
     <configuration name="Base64Test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EnhancedNotePad" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,27 +78,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="DESTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="EnhancedNotePad" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strEncrypt/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strEncrypt/test/DESTest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="MorseTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EnhancedNotePad" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -120,7 +99,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="RSATest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="editDistanceTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EnhancedNotePad" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -128,11 +107,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strEncrypt/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strMetric/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strEncrypt/test/RSATest.py" />
+      <option name="SCRIPT_NAME" value="F:\.vscode\Github\EnhancedNotePad\ENotePadAlgorithm\strMetric\test\editDistanceTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="hammingDistanceTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EnhancedNotePad" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strMetric/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strMetric/test/hammingDistanceTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -143,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.editDistanceTest" />
+        <item itemvalue="Python.hammingDistanceTest" />
         <item itemvalue="Python.MorseTest" />
         <item itemvalue="Python.CaesarTest" />
         <item itemvalue="Python.Base64Test" />
-        <item itemvalue="Python.DESTest" />
-        <item itemvalue="Python.RSATest" />
       </list>
     </recent_temporary>
   </component>
@@ -171,25 +171,25 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="557" y="169" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1627004411814" />
-    <state width="1336" height="193" key="GridCell.Tab.0.bottom" timestamp="1627175974753">
+    <state width="1336" height="193" key="GridCell.Tab.0.bottom" timestamp="1627182473520">
       <screen x="63" y="0" width="1473" height="864" />
     </state>
-    <state width="1336" height="193" key="GridCell.Tab.0.bottom/63.0.1473.864@63.0.1473.864" timestamp="1627175974753" />
+    <state width="1336" height="193" key="GridCell.Tab.0.bottom/63.0.1473.864@63.0.1473.864" timestamp="1627182473520" />
     <state width="1319" height="176" key="GridCell.Tab.0.bottom/66.0.1470.864@66.0.1470.864" timestamp="1627050040648" />
-    <state width="1336" height="193" key="GridCell.Tab.0.center" timestamp="1627175974752">
+    <state width="1336" height="193" key="GridCell.Tab.0.center" timestamp="1627182473520">
       <screen x="63" y="0" width="1473" height="864" />
     </state>
-    <state width="1336" height="193" key="GridCell.Tab.0.center/63.0.1473.864@63.0.1473.864" timestamp="1627175974752" />
+    <state width="1336" height="193" key="GridCell.Tab.0.center/63.0.1473.864@63.0.1473.864" timestamp="1627182473520" />
     <state width="1319" height="176" key="GridCell.Tab.0.center/66.0.1470.864@66.0.1470.864" timestamp="1627050040648" />
-    <state width="1336" height="193" key="GridCell.Tab.0.left" timestamp="1627175974752">
+    <state width="1336" height="193" key="GridCell.Tab.0.left" timestamp="1627182473520">
       <screen x="63" y="0" width="1473" height="864" />
     </state>
-    <state width="1336" height="193" key="GridCell.Tab.0.left/63.0.1473.864@63.0.1473.864" timestamp="1627175974752" />
+    <state width="1336" height="193" key="GridCell.Tab.0.left/63.0.1473.864@63.0.1473.864" timestamp="1627182473520" />
     <state width="1319" height="176" key="GridCell.Tab.0.left/66.0.1470.864@66.0.1470.864" timestamp="1627050040648" />
-    <state width="1336" height="193" key="GridCell.Tab.0.right" timestamp="1627175974752">
+    <state width="1336" height="193" key="GridCell.Tab.0.right" timestamp="1627182473520">
       <screen x="63" y="0" width="1473" height="864" />
     </state>
-    <state width="1336" height="193" key="GridCell.Tab.0.right/63.0.1473.864@63.0.1473.864" timestamp="1627175974752" />
+    <state width="1336" height="193" key="GridCell.Tab.0.right/63.0.1473.864@63.0.1473.864" timestamp="1627182473520" />
     <state width="1319" height="176" key="GridCell.Tab.0.right/66.0.1470.864@66.0.1470.864" timestamp="1627050040648" />
     <state width="1320" height="222" key="GridCell.Tab.1.bottom" timestamp="1627125486105">
       <screen x="63" y="0" width="1473" height="864" />
