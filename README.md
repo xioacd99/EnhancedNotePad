@@ -78,16 +78,4 @@ Issues 部分新建一个 Issue，填写对应的标题、描述、Labels、（A
 1. 2021/07/23
    1. 需求分析，项目搭建，明确分工
    2. 实现 BF 字符串匹配、KMP 字符串匹配
-<<<<<<< Updated upstream
-   3. 实现 BF 计数、BST 计数、True 计数、hashTable 计数
-=======
    3. 实现 BF 计数、BST 计数、Trie 计数、hashTable 计数
-2. 2021/07/24
-   1. 实现 BM 匹配、Sunday 匹配
-   2. 增加测试数据集（大量）
-   3. Ui 界面基本完成
-   4. 项目文件结构整理
-3. 2021/07/25
-   1. 实现 10 种字符串加密算法
-   2. 代码重构
->>>>>>> Stashed changes

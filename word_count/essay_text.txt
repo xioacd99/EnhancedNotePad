@@ -1,0 +1,33 @@
+This book grew out of courses which I taught at Cornell University and 
+the University of Warwick during 1969 and 1970. I wrote it because of a 
+strong belief that there should be readily available a semi-historical and geometrically motivated exposition of J. H. C. Whitehead's beautiful theory of 
+simple-homotopy types; that the best way to understand this theory is to 
+know how and why it was built. This belief is buttressed by the fact that the 
+major uses of, and advances in, the theory in recent times-for example, the 
+s-cobordism theorem (discussed in §25), the use of the theory in surgery, its 
+extension to non-compact complexes (discussed at the end of §6) and the 
+proof of topological invariance (given in the Appendix)-have come from 
+just such an understanding. 
+A second reason for writing the book is pedagogical. This is an excellent 
+subject for a topology student to "grow up" on. The interplay between 
+geometry and algebra in topology, each enriching the other, is beautifully 
+illustrated in simple-homotopy theory. The subject is accessible (as in the 
+courses mentioned at the outset) to students who have had a good onesemester course in algebraic topology. I have tried to write proofs which meet 
+the needs of such students. (When a proof was omitted and left as an exercise, 
+it was done with the welfare of the student in mind. He should do such 
+exercises zealously.) 
+There is some new material here1-for example, the completely geometric 
+definition of the Whitehead group of a complex in §6, the observations on the 
+counting of simple-homotopy types in §24, and the direct proof of the 
+equivalence of Milnor's definition of torsion with the classical definition, 
+given in §16. But my debt to previous works on the subject is very great. 
+I refer to [Kervaire-Maumary-deRham], [Milnor 1] and above all [J. H. C. 
+Whitehead 1,2,3,4]. The reader should turn to these sources for more material, 
+alternate viewpoints, etc. 
+I am indebted to Doug Anderson and Paul Olum for many enlightening 
+discussions, and to Roger Livesay and Stagg Newman for their eagle-eyed 
+reading of the original manuscript. Also I would like to express my appreciation to Arletta Havlik, Esther Monroe, Catherine Stevens and Dolores 
+Pendell for their competence and patience in typing the manuscript. 
+My research in simple-homotopy theory was partly supported by grants 
+from the National Science Foundation and the Science Research Council of 
+Great Britain. I and my wife and my children are grateful to them.
