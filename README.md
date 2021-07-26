@@ -51,9 +51,12 @@ Issues 部分新建一个 Issue，填写对应的标题、描述、Labels、（A
    ```
 2. 写好的类文件放到对应的文件夹下，如`KMP字符串匹配`算法我们放在了`ENotePadAlgorithm/strFind`文件夹下（这里你也可以看出，如果你扩展的算法不再这些文件夹的范围内，你可以按照`typeOperation`的格式新建文件夹，如`imgGenerate、videoEncode`等）
 3. 当你写好一个算法后，你需要在对应的 test 文件夹下加上对应算法的测试文件
-4. 使用单一驼峰命名法，但是类名和算法文件名首字母可以大写，举例如下
+4. 使用单一驼峰命名法，但是类名和算法文件名首字母可以大写，举例如
+
    正确的：BruteFoce.py, insert, badCharOffset
+   
    错误的：BF_word_count.py, Insert, BadCharOffset
+   
 5. 每个函数和类都需要添加相应的注释（`vscode koroFileHeader`插件可以帮助你更快地写好注释）
    ```python
    # 这是这个插件利用 ctrl + alt + t 快捷键生成的函数注释
