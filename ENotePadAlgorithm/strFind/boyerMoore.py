@@ -1,12 +1,12 @@
-import sys, os
+import os
 
 wordSplit = [',', '.', ':', '"', ",", '\n', ' ', '?', '!', '(', ')',
              '，', '。', '‘', '‘', '“', '”', '？', '！', '（', '）']
 
 
-class BMUtil(object):
+class BoyerMoore(object):
     def __init__(self):
-        super(BMUtil, self).__init__()
+        super(BoyerMoore, self).__init__()
         self.badCharTable = {}
         self.goodSuffixTable = {}
 
@@ -140,10 +140,3 @@ class BMUtil(object):
         return results
 
 
-if __name__ == '__main__':
-    bmUtil = BMUtil()
-    ans = bmUtil.fileBMFind('testData/ENTest.txt', 'be')
-    # print(ans)
-    # ans = fileKMPFind('testData/ENTest.txt', 'be')
-    for singleResult in ans:
-        print(singleResult)
