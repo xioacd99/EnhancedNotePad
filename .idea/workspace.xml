@@ -24,19 +24,25 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ENotePadAlgorithm/strRead/test" />
     <property name="settings.editor.selected.configurable" value="com.github.izhangzhihao.rainbow.brackets.settings.RainbowConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\.vscode\Github\EnhancedNotePad\ENotePadAlgorithm\strFind\test" />
+      <recent name="F:\.vscode\Github\EnhancedNotePad\ENotePadAlgorithm\strSyntax\test" />
       <recent name="F:\.vscode\Github\EnhancedNotePad\ENotdPadAlgorithm\strCount" />
       <recent name="F:\.vscode\Github\EnhancedNotePad\ENotdPadAlgorithm\strFind" />
       <recent name="F:\.vscode\Github\EnhancedNotePad\ENotdPadAlgorithm" />
-      <recent name="F:\.vscode\Github\EnhancedNotePad\dataset" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\.vscode\Github\EnhancedNotePad\ENotePadAlgorithm\strRead\test" />
+      <recent name="F:\.vscode\Github\EnhancedNotePad\ENotePadAlgorithm\strFind\test" />
+      <recent name="F:\.vscode\Github\EnhancedNotePad\ENotePadAlgorithm\strFind" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.FanoCodeTest">
-    <configuration name="FanoCodeTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.ahoCorasick">
+    <configuration name="SBOM" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EnhancedNotePad" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -44,11 +50,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strZip/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strFind" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strZip/test/FanoCodeTest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strFind/SBOM.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -57,7 +63,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="LZ78" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="SBOMTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EnhancedNotePad" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -65,11 +71,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strZip" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strFind/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strZip/LZ78.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strFind/test/SBOMTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -78,7 +84,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="RLC" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ahoCorasick" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EnhancedNotePad" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -86,11 +92,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strZip" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strFind" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strZip/RLC.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strFind/ahoCorasick.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -99,7 +105,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="RLCTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ahoCorasickTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EnhancedNotePad" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -107,11 +113,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strZip/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strFind/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strZip/test/RLCTest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strFind/test/ahoCorasickTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -120,7 +126,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="shannonCode" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="horspoolTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EnhancedNotePad" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -128,11 +134,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strZip" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strFind/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strZip/shannonCode.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strFind/test/horspoolTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -143,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.FanoCodeTest" />
-        <item itemvalue="Python.shannonCode" />
-        <item itemvalue="Python.RLCTest" />
-        <item itemvalue="Python.RLC" />
-        <item itemvalue="Python.LZ78" />
+        <item itemvalue="Python.ahoCorasick" />
+        <item itemvalue="Python.ahoCorasickTest" />
+        <item itemvalue="Python.SBOMTest" />
+        <item itemvalue="Python.SBOM" />
+        <item itemvalue="Python.horspoolTest" />
       </list>
     </recent_temporary>
   </component>
@@ -171,48 +177,60 @@
       <screen x="63" y="0" width="1473" height="864" />
     </state>
     <state x="795" y="233" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/63.0.1473.864@63.0.1473.864" timestamp="1627269989157" />
+    <state x="925" y="358" key="#com.jetbrains.python.refactoring.move.PyMakeFunctionTopLevelDialog" timestamp="1627296992394">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="925" y="358" key="#com.jetbrains.python.refactoring.move.PyMakeFunctionTopLevelDialog/62.0.1474.864@62.0.1474.864" timestamp="1627296992394" />
     <state x="557" y="169" key="FileChooserDialogImpl" timestamp="1627004411814">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="557" y="169" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1627004411814" />
-    <state width="1336" height="241" key="GridCell.Tab.0.bottom" timestamp="1627271532195">
-      <screen x="63" y="0" width="1473" height="864" />
+    <state width="1336" height="255" key="GridCell.Tab.0.bottom" timestamp="1627306292665">
+      <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1336" height="241" key="GridCell.Tab.0.bottom/63.0.1473.864@63.0.1473.864" timestamp="1627271532195" />
+    <state width="1336" height="255" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1627306292665" />
+    <state width="1336" height="190" key="GridCell.Tab.0.bottom/63.0.1473.864@63.0.1473.864" timestamp="1627295395368" />
     <state width="1319" height="176" key="GridCell.Tab.0.bottom/66.0.1470.864@66.0.1470.864" timestamp="1627050040648" />
-    <state width="1336" height="241" key="GridCell.Tab.0.center" timestamp="1627271532195">
-      <screen x="63" y="0" width="1473" height="864" />
+    <state width="1336" height="255" key="GridCell.Tab.0.center" timestamp="1627306292665">
+      <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1336" height="241" key="GridCell.Tab.0.center/63.0.1473.864@63.0.1473.864" timestamp="1627271532195" />
+    <state width="1336" height="255" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1627306292665" />
+    <state width="1336" height="190" key="GridCell.Tab.0.center/63.0.1473.864@63.0.1473.864" timestamp="1627295395368" />
     <state width="1319" height="176" key="GridCell.Tab.0.center/66.0.1470.864@66.0.1470.864" timestamp="1627050040648" />
-    <state width="1336" height="241" key="GridCell.Tab.0.left" timestamp="1627271532195">
-      <screen x="63" y="0" width="1473" height="864" />
+    <state width="1336" height="255" key="GridCell.Tab.0.left" timestamp="1627306292665">
+      <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1336" height="241" key="GridCell.Tab.0.left/63.0.1473.864@63.0.1473.864" timestamp="1627271532195" />
+    <state width="1336" height="255" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1627306292665" />
+    <state width="1336" height="190" key="GridCell.Tab.0.left/63.0.1473.864@63.0.1473.864" timestamp="1627295395367" />
     <state width="1319" height="176" key="GridCell.Tab.0.left/66.0.1470.864@66.0.1470.864" timestamp="1627050040648" />
-    <state width="1336" height="241" key="GridCell.Tab.0.right" timestamp="1627271532195">
-      <screen x="63" y="0" width="1473" height="864" />
+    <state width="1336" height="255" key="GridCell.Tab.0.right" timestamp="1627306292665">
+      <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1336" height="241" key="GridCell.Tab.0.right/63.0.1473.864@63.0.1473.864" timestamp="1627271532195" />
+    <state width="1336" height="255" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1627306292665" />
+    <state width="1336" height="190" key="GridCell.Tab.0.right/63.0.1473.864@63.0.1473.864" timestamp="1627295395368" />
     <state width="1319" height="176" key="GridCell.Tab.0.right/66.0.1470.864@66.0.1470.864" timestamp="1627050040648" />
-    <state width="1336" height="241" key="GridCell.Tab.1.bottom" timestamp="1627271532195">
-      <screen x="63" y="0" width="1473" height="864" />
+    <state width="1336" height="241" key="GridCell.Tab.1.bottom" timestamp="1627304943884">
+      <screen x="62" y="0" width="1474" height="864" />
     </state>
+    <state width="1336" height="241" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1627304943884" />
     <state width="1336" height="241" key="GridCell.Tab.1.bottom/63.0.1473.864@63.0.1473.864" timestamp="1627271532195" />
     <state width="1319" height="219" key="GridCell.Tab.1.bottom/66.0.1470.864@66.0.1470.864" timestamp="1627050040632" />
-    <state width="1336" height="241" key="GridCell.Tab.1.center" timestamp="1627271532195">
-      <screen x="63" y="0" width="1473" height="864" />
+    <state width="1336" height="241" key="GridCell.Tab.1.center" timestamp="1627304943884">
+      <screen x="62" y="0" width="1474" height="864" />
     </state>
+    <state width="1336" height="241" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1627304943884" />
     <state width="1336" height="241" key="GridCell.Tab.1.center/63.0.1473.864@63.0.1473.864" timestamp="1627271532195" />
     <state width="1319" height="219" key="GridCell.Tab.1.center/66.0.1470.864@66.0.1470.864" timestamp="1627050040629" />
-    <state width="1336" height="241" key="GridCell.Tab.1.left" timestamp="1627271532195">
-      <screen x="63" y="0" width="1473" height="864" />
+    <state width="1336" height="241" key="GridCell.Tab.1.left" timestamp="1627304943884">
+      <screen x="62" y="0" width="1474" height="864" />
     </state>
+    <state width="1336" height="241" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1627304943884" />
     <state width="1336" height="241" key="GridCell.Tab.1.left/63.0.1473.864@63.0.1473.864" timestamp="1627271532195" />
     <state width="1319" height="219" key="GridCell.Tab.1.left/66.0.1470.864@66.0.1470.864" timestamp="1627050040629" />
-    <state width="1336" height="241" key="GridCell.Tab.1.right" timestamp="1627271532195">
-      <screen x="63" y="0" width="1473" height="864" />
+    <state width="1336" height="241" key="GridCell.Tab.1.right" timestamp="1627304943884">
+      <screen x="62" y="0" width="1474" height="864" />
     </state>
+    <state width="1336" height="241" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1627304943884" />
     <state width="1336" height="241" key="GridCell.Tab.1.right/63.0.1473.864@63.0.1473.864" timestamp="1627271532195" />
     <state width="1319" height="219" key="GridCell.Tab.1.right/66.0.1470.864@66.0.1470.864" timestamp="1627050040631" />
     <state x="281" y="72" key="SettingsEditor" timestamp="1627034697576">

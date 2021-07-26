@@ -1,7 +1,7 @@
 <!--
  * @Author: xioacd99
  * @Date: 2021-07-22 23:46:42
- * @LastEditTime: 2021-07-25 09:20:43
+ * @LastEditTime: 2021-07-26 20:40:29
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \.vscode\Github\EnhancedNotePad\README.md
@@ -15,7 +15,24 @@
 
 ## 功能介绍
 
-// TODO：需求分析中
+注：每个功能都有多种算法可供选择，具体可查看 ENotePadAlgorithm 下的具体算法
+
+1. 文本文件批处理（单操作、多操作）[未实现]
+2. 字符串计算[未实现]
+3. 文本相似性检测[未实现]
+4. 单词计数[还需要增加一些算法]
+5. 字符串加密
+6. 字符串匹配
+7. 文件索引[未实现]
+8. 文本文件朗读
+9. 字符串语法检查[还需要增加一些算法]
+10. 数据压缩
+
+## 环境配置
+
+注：如果不需要使用相关功能，可以不需要安装对应的库
+
+1. pyttsx3, pywin32: 文字转语音库（文本文件朗读）
 
 ## 如何参与项目？
 
@@ -54,9 +71,9 @@ Issues 部分新建一个 Issue，填写对应的标题、描述、Labels、（A
 4. 使用单一驼峰命名法，但是类名和算法文件名首字母可以大写，举例如
 
    正确的：BruteFoce.py, insert, badCharOffset
-   
+
    错误的：BF_word_count.py, Insert, BadCharOffset
-   
+
 5. 每个函数和类都需要添加相应的注释（`vscode koroFileHeader`插件可以帮助你更快地写好注释）
    ```python
    # 这是这个插件利用 ctrl + alt + t 快捷键生成的函数注释
@@ -86,11 +103,11 @@ Issues 部分新建一个 Issue，填写对应的标题、描述、Labels、（A
    1. 实现 BM 字符串匹配、Sunday 字符串匹配
    2. 项目文件结构更改
    3. Ui 基本框架
-4. 2021/07/25
+3. 2021/07/25
    1. 实现 10 种加密算法
    2. 实现几种字符串距离度量函数
    3. 文本相似性算法设计
-5. 2021/07/26
+4. 2021/07/26
    1. 实现 8 种数据压缩算法
    2. 添加 5 种字符串匹配算法
    3. 实现括号匹配
