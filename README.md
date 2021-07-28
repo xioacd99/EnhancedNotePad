@@ -1,7 +1,7 @@
 <!--
  * @Author: xioacd99
  * @Date: 2021-07-22 23:46:42
- * @LastEditTime: 2021-07-26 20:40:29
+ * @LastEditTime: 2021-07-28 21:39:13
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \.vscode\Github\EnhancedNotePad\README.md
@@ -17,22 +17,26 @@
 
 注：每个功能都有多种算法可供选择，具体可查看 ENotePadAlgorithm 下的具体算法
 
-1. 文本文件批处理（单操作、多操作）[未实现]
-2. 字符串计算[未实现]
-3. 文本相似性检测[还需要增加一些算法]
-4. 单词计数
-5. 字符串加密
-6. 字符串匹配
-7. 文件索引[未实现]
-8. 文本文件朗读
-9. 字符串语法检查[还需要增加一些算法]
-10. 数据压缩
+1. 文本文件批处理（单操作、多操作）
+2. 文本相似性检测
+3. 单词计数
+4. 字符串加密
+5. 字符串匹配
+6. 文本文件朗读
+7. 字符串语法检查
+8.  数据压缩
 
 ## 环境配置
 
 注：如果不需要使用相关功能，可以不需要安装对应的库
 
 1. pyttsx3, pywin32: 文字转语音库（文本文件朗读）
+2. PyQt5，pyQtWebEngine：图形库
+3. imageio：存取图片，图片解析操作（词云图）
+4. jieba：分词库（词云图）
+5. qtawesome：图标库
+6. wordcloud：词云图处理
+7. docx：python-word
 
 ## 如何参与项目？
 
@@ -91,7 +95,9 @@ Issues 部分新建一个 Issue，填写对应的标题、描述、Labels、（A
 
 ## 历史 Error
 
-[history error](documents/historyError.md)
+### 字符串匹配
+
+1. 简单的匹配算法只能做到非全字匹配，全字匹配还要考虑单行没有统计完的情况，如being be
 
 ## 更新日志
 
@@ -115,3 +121,8 @@ Issues 部分新建一个 Issue，填写对应的标题、描述、Labels、（A
    5. 实现基于树的文本相似性算法
    6. 实现code IDE自动补全和在线编译
 5. 2021/07/27
+   1. 实现几个功能
+6. 2021/07/28
+   1. 底层算法优化
+7. 2021/07/29
+   1. 代码重构

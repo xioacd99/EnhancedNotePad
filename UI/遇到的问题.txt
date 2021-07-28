@@ -1,0 +1,10 @@
+1.
+2.Monaco Editor 通过调用js返回值、保存代码、dark主题、默认语言
+3.QtCore.Qt.LeftButton
+4.simsun.ttc不然中文乱码
+5.from pyecharts(.charts ) import Bar, Pie, Line
+6.from docx.oxml.ns import qn
+7.ANSI---UTF-8
+8.pyttsx3 2.71
+9.'gbk' codec can't decode byte 0x80 in position 26: illegal multibyte sequence
+    encodeing='utf-8'
