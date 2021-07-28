@@ -1,6 +1,6 @@
 from ENotePadAlgorithm.strEncrypt.SHA1 import SHA1
 
-# TODO: 还可以写一个HMAC MD5
+
 class HMACSHA1(object):
     msg = bytearray()
     key = bytearray()
@@ -43,3 +43,8 @@ class HMACSHA1(object):
     def hexdigest(self):
         digest = self.digest()
         return digest.hex()
+
+if __name__ == '__main__':
+    hmacSHA1 = HMACSHA1('1','hello, world')
+    ans = hmacSHA1.hexdigest()
+    print(ans)

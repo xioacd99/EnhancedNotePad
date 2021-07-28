@@ -75,3 +75,12 @@ class LZ77:
             cursor += (l + 1)
 
         return out
+
+if __name__ == '__main__':
+    compressor = LZ77(6)
+    origin = list('aacaacabcabaaac')
+    pack = compressor.compress(origin)
+    unpack = compressor.decompress(pack)
+    print (pack)
+    print (unpack)
+    print (unpack == 'aacaacabcabaaac')

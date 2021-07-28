@@ -331,3 +331,11 @@ class AES(object):  # AES-128-CBC
             tmpiv = cipher[i:i + 16]
         plaintext = plaintext[:-plaintext[-1]]
         return plaintext
+
+if __name__ == '__main__':
+    aes = AES()
+    ans=aes.encrypt('1','1111111111111111')
+    print(ans)
+    out=aes.decrypt(ans,'1111111111111111')
+    print(out)
+    pass

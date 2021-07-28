@@ -67,3 +67,8 @@ class Sunday(object):
             with open(filename, 'w') as file:
                 print('Create a new file named %s' % filename)
         return results
+
+if __name__ == '__main__':
+    bf = Sunday()
+    ans = bf.strSundayFind('be being bebe ', 'be')
+    print(ans)

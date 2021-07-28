@@ -56,3 +56,9 @@ def decompress(compressed):
         w = entry
     return result.getvalue()
 
+if __name__ == '__main__':
+    # How to use:
+    compressed = compress('TOBEORNOTBTOBEORTOEORNOT')
+    print (compressed)
+    decompressed = decompress(compressed)
+    print (decompressed)

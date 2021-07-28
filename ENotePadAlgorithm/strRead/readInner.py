@@ -43,3 +43,8 @@ class ReadInner(object):
         voices = engine.getProperty('voices')
         for voice in voices:
             print('id = {} \nname = {} \n'.format(voice.id, voice.name))
+
+if __name__ == '__main__':
+    ri = ReadInner()
+    # ri.strReadInner('hello, world')
+    ri.fileReadInner('F:/.vscode/Github/EnhancedNotePad/ENotePadAlgorithm/algorithmTestData/CNTest.txt')

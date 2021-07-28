@@ -18,3 +18,7 @@ def getEditDistance(a, b):
             else:
                 dp[i][j] = min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1])
     return dp[aLen][bLen]
+
+if __name__ == '__main__':
+    ans = getEditDistance('intention','execution')
+    print(ans)

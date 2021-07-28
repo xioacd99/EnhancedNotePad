@@ -139,3 +139,8 @@ class SHA1(object):
         digest = digest << 32
         digest += self.re
         return self.__hex(digest)
+
+if __name__ == '__main__':
+    sha1 = SHA1('1')
+    ans = sha1.hexdigest()
+    print(ans)

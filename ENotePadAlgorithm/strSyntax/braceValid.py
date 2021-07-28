@@ -18,3 +18,7 @@ def isBraceValid(str) -> bool:
             else:
                 stk.append(ch)
     return not stk
+
+if __name__ == '__main__':
+    ans = isBraceValid('(hello, world)')
+    print(ans)

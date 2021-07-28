@@ -111,3 +111,8 @@ class Horspool(object):
             with open(filename, 'w') as file:
                 print('Create a new file named %s' % filename)
         return results
+
+if __name__ == '__main__':
+    hp = Horspool()
+    ans = hp.strFind('be being be being ', 'be')
+    print(ans)

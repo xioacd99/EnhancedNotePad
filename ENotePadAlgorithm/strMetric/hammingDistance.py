@@ -19,3 +19,7 @@ def getHammingDistance(a, b):
         if a[i] != b[i]:
             result += 1
     return result
+
+if __name__ == '__main__':
+    ans = getHammingDistance('12345','abcde')
+    print(ans)

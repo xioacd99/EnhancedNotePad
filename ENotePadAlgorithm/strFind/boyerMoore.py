@@ -139,4 +139,8 @@ class BoyerMoore(object):
                 print('Create a new file named %s' % filename)
         return results
 
-
+if __name__ == '__main__':
+    bm = BoyerMoore()
+    ans = bm.fileBMFind('ENTest.txt', 'be')
+    for singleResult in ans:
+        print(singleResult)

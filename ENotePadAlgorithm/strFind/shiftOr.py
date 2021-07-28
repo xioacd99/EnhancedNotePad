@@ -79,3 +79,7 @@ class ShiftOr(object):
         return results
 
 
+if __name__ == '__main__':
+    sr = ShiftOr()
+    ans = sr.strFind('be being be being ', 'be')
+    print(ans)

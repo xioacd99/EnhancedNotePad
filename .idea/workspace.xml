@@ -41,7 +41,7 @@
       <recent name="F:\.vscode\Github\EnhancedNotePad\ENotdPadAlgorithm\strFind" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.launcher">
+  <component name="RunManager" selected="Python.bruteForce">
     <configuration name="BPlus" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EnhancedNotePad" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,7 +84,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ahoCorasickTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="bruteForce" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EnhancedNotePad" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,11 +92,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strFind/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strFind" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strFind/test/ahoCorasickTest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strFind/bruteForce.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.bruteForce" />
         <item itemvalue="Python.launcher" />
         <item itemvalue="Python.operationOptimalSchedule" />
         <item itemvalue="Python.BPlus" />
         <item itemvalue="Python.ahoCorasick" />
-        <item itemvalue="Python.ahoCorasickTest" />
       </list>
     </recent_temporary>
   </component>
@@ -186,28 +186,28 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="557" y="169" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1627004411814" />
-    <state width="1336" height="133" key="GridCell.Tab.0.bottom" timestamp="1627479710995">
+    <state width="1336" height="133" key="GridCell.Tab.0.bottom" timestamp="1627483460909">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1336" height="133" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1627479710995" />
+    <state width="1336" height="133" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1627483460909" />
     <state width="1336" height="190" key="GridCell.Tab.0.bottom/63.0.1473.864@63.0.1473.864" timestamp="1627295395368" />
     <state width="1319" height="176" key="GridCell.Tab.0.bottom/66.0.1470.864@66.0.1470.864" timestamp="1627050040648" />
-    <state width="1336" height="133" key="GridCell.Tab.0.center" timestamp="1627479710995">
+    <state width="1336" height="133" key="GridCell.Tab.0.center" timestamp="1627483460908">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1336" height="133" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1627479710995" />
+    <state width="1336" height="133" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1627483460908" />
     <state width="1336" height="190" key="GridCell.Tab.0.center/63.0.1473.864@63.0.1473.864" timestamp="1627295395368" />
     <state width="1319" height="176" key="GridCell.Tab.0.center/66.0.1470.864@66.0.1470.864" timestamp="1627050040648" />
-    <state width="1336" height="133" key="GridCell.Tab.0.left" timestamp="1627479710995">
+    <state width="1336" height="133" key="GridCell.Tab.0.left" timestamp="1627483460908">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1336" height="133" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1627479710995" />
+    <state width="1336" height="133" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1627483460908" />
     <state width="1336" height="190" key="GridCell.Tab.0.left/63.0.1473.864@63.0.1473.864" timestamp="1627295395367" />
     <state width="1319" height="176" key="GridCell.Tab.0.left/66.0.1470.864@66.0.1470.864" timestamp="1627050040648" />
-    <state width="1336" height="133" key="GridCell.Tab.0.right" timestamp="1627479710995">
+    <state width="1336" height="133" key="GridCell.Tab.0.right" timestamp="1627483460909">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1336" height="133" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1627479710995" />
+    <state width="1336" height="133" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1627483460909" />
     <state width="1336" height="190" key="GridCell.Tab.0.right/63.0.1473.864@63.0.1473.864" timestamp="1627295395368" />
     <state width="1319" height="176" key="GridCell.Tab.0.right/66.0.1470.864@66.0.1470.864" timestamp="1627050040648" />
     <state width="1336" height="241" key="GridCell.Tab.1.bottom" timestamp="1627304943884">
@@ -243,5 +243,9 @@
       <screen x="66" y="0" width="1470" height="864" />
     </state>
     <state width="600" height="428" key="javadoc.popup/66.0.1470.864@66.0.1470.864" timestamp="1627047962922" />
+    <state x="697" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1627481946042">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="697" y="185" width="672" height="678" key="search.everywhere.popup/62.0.1474.864@62.0.1474.864" timestamp="1627481946042" />
   </component>
 </project>

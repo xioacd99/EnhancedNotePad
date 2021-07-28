@@ -1,9 +1,5 @@
 import os
 
-
-# TODO: 这是一个多对多的匹配，因此和其他的改法不一样，具体可以查看测试文件
-
-
 def hexAddress(object):
     if object == None:
         return '_None_'

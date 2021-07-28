@@ -19,3 +19,5 @@ def RLC(message):
     
     print(buf.rstrip(','))
 
+if __name__ == '__main__':
+    RLC('aaabbbbccccc')

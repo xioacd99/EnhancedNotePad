@@ -80,7 +80,6 @@ class ShiftAnd(object):
 
 
 if __name__ == '__main__':
-    s = 'be being be being '
-    t = 'be'
-    res = shift_and_match(s, t)
-    print('Find "%s" in "%s" by positions: ' % (t, s), res)
+    sa=ShiftAnd()
+    ans = sa.strFind('be being be being ','be')
+    print(ans)

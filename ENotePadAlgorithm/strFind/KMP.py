@@ -112,3 +112,8 @@ class KMP(object):
             with open(filename, 'w') as file:
                 print('Create a new file named %s' % filename)
         return results
+
+if __name__ == '__main__':
+    bf = KMP()
+    ans = bf.strKMPFind('be being bebe ', 'be')
+    print(ans)

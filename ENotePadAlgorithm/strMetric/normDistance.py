@@ -74,3 +74,12 @@ def getMaxNormDistance(a, b):
     bL1 = getL1NormDistance(b, minStr)
     # bL2=getL2NormDistance(b,minStr)
     return min(aL1, bL1)
+
+if __name__ == '__main__':
+    a = 'hello, world'
+    b = 'HELLO, WORLD'
+    print(getL0NormDistance(a, b))
+    print(getL1NormDistance(a, b))
+    print(getL2NormDistance(a, b))
+    print(getMinNormDistance(a, b))
+    print(getMaxNormDistance(a, b))
