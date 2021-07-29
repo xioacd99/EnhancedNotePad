@@ -1,122 +1,57 @@
-import sys
-import random
 import string
-
 import decimal
 from decimal import Decimal
 
 decimal.getcontext().prec = 100
 
 
-def encode(encode_str, N):
-    count = dict.fromkeys(string.ascii_lowercase, 1)  # probability table
-    cdf_range = dict.fromkeys(string.ascii_lowercase, 0)
-    pdf = dict.fromkeys(string.ascii_lowercase, 0)
+class ArithmeticCode(object):
+    def encode(self, str, N=5):
+        count = dict.fromkeys(string.ascii_lowercase, 1)  # probability table
+        cdf_range = dict.fromkeys(string.ascii_lowercase, 0)
+        pdf = dict.fromkeys(string.ascii_lowercase, 0)
 
-    low = 0
-    high = Decimal(1) / Decimal(26)
+        low = 0
+        high = Decimal(1) / Decimal(26)
 
-    for key, value in sorted(cdf_range.items()):
-        cdf_range[key] = [low, high]
-        low = high
-        high += Decimal(1) / Decimal(26)
+        for key, value in sorted(cdf_range.items()):
+            cdf_range[key] = [low, high]
+            low = high
+            high += Decimal(1) / Decimal(26)
 
-    for key, value in sorted(pdf.items()):
-        pdf[key] = Decimal(1) / Decimal(26)
-
-    i = 26
-
-    lower_bound = 0  # upper bound
-    upper_bound = 1  # lower bound
-
-    u = 0
-
-    # go thru every symbol in the string
-    for sym in encode_str:
-        i += 1
-        u += 1
-        count[sym] += 1
-
-        curr_range = upper_bound - lower_bound  # current range
-        upper_bound = lower_bound + (curr_range * cdf_range[sym][1])  # upper_bound
-        lower_bound = lower_bound + (curr_range * cdf_range[sym][0])  # lower bound
-
-        # update cdf_range after N symbols have been read
-        if (u == N):
-            u = 0
-
-            for key, value in sorted(pdf.items()):
-                pdf[key] = Decimal(count[key]) / Decimal(i)
-
-            low = 0
-            for key, value in sorted(cdf_range.items()):
-                high = pdf[key] + low
-                cdf_range[key] = [low, high]
-                low = high
-
-    return lower_bound
-
-
-def decode(encoded, strlen, every):
-    decoded_str = ""
-
-    count = dict.fromkeys(string.ascii_lowercase, 1)  # probability table
-    cdf_range = dict.fromkeys(string.ascii_lowercase, 0)
-    pdf = dict.fromkeys(string.ascii_lowercase, 0)
-
-    low = 0
-    high = Decimal(1) / Decimal(26)
-
-    for key, value in sorted(cdf_range.items()):
-        cdf_range[key] = [low, high]
-        low = high
-        high += Decimal(1) / Decimal(26)
-
-    for key, value in sorted(pdf.items()):
-        pdf[key] = Decimal(1) / Decimal(26)
-
-    lower_bound = 0  # upper bound
-    upper_bound = 1  # lower bound
-
-    k = 0
-
-    while (strlen != len(decoded_str)):
         for key, value in sorted(pdf.items()):
+            pdf[key] = Decimal(1) / Decimal(26)
 
-            curr_range = upper_bound - lower_bound  # current range
-            upper_cand = lower_bound + (curr_range * cdf_range[key][1])  # upper_bound
-            lower_cand = lower_bound + (curr_range * cdf_range[key][0])  # lower bound
+        # 假设待编码字符只有 26 个英文字母
+        i = 26
+        lower_bound = 0
+        upper_bound = 1
+        u = 0
 
-            if (lower_cand <= encoded < upper_cand):
-                k += 1
-                decoded_str += key
+        for ch in str:
+            i += 1
+            u += 1
+            count[ch] += 1
 
-                if (strlen == len(decoded_str)):
-                    break
+            curr_range = upper_bound - lower_bound
+            upper_bound = lower_bound + (curr_range * cdf_range[ch][1])
+            lower_bound = lower_bound + (curr_range * cdf_range[ch][0])
 
-                upper_bound = upper_cand
-                lower_bound = lower_cand
+            # update cdf_range after N symbols have been read
+            if (u == N):
+                u = 0
+                for key, value in sorted(pdf.items()):
+                    pdf[key] = Decimal(count[key]) / Decimal(i)
+                low = 0
+                for key, value in sorted(cdf_range.items()):
+                    high = pdf[key] + low
+                    cdf_range[key] = [low, high]
+                    low = high
 
-                count[key] += 1
+        return lower_bound
 
-                if (k == every):
-                    k = 0
-                    for key, value in sorted(pdf.items()):
-                        pdf[key] = Decimal(count[key]) / Decimal(26 + len(decoded_str))
-
-                    low = 0
-                    for key, value in sorted(cdf_range.items()):
-                        high = pdf[key] + low
-                        cdf_range[key] = [low, high]
-                        low = high
-
-    print(decoded_str)
 
 if __name__ == '__main__':
-    count = 10
-    encode_str = "heloworldheloworld"
-    strlen = len(encode_str)
-    every = 3
-    encoded = encode(encode_str, every)
-    print(encoded)
-    decoded = decode(encoded, strlen, every)
+    test = ArithmeticCode()
+    ans = test.encode('helloworld')
+    print(ans)

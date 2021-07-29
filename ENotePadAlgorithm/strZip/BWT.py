@@ -1,25 +1,15 @@
-def BWT(sequence):
-    sequence += '$'
-    table = [sequence[index:] + sequence[:index] for index, _ in enumerate(sequence)]
-    table.sort()
-    bwt = [rotation[-1] for rotation in table]
-    bwt = ''.join(bwt)
-
-    return bwt
-
-
-def inverse_BWT(sequence):
-    table = [col for col in sequence]
-    for i in range(len(sequence) - 1):
+class BWT(object):
+    def encode(self, str):
+        str += '$'
+        table = [str[index:] + str[:index] for index, _ in enumerate(str)]
         table.sort()
-        table = [sequence[i] + table[i] for i in range(len(sequence))]
+        result = [rotation[-1] for rotation in table]
+        result = ''.join(result)
 
-    return table[[row[-1] for row in table].index('$')]
+        return result.replace('$', '')
+
 
 if __name__ == '__main__':
-    bwt = BWT(input('Enter sequence: '))
-    print('Burrows-Wheeler Transform: ' + str(bwt))
-
-    inverse = inverse_BWT(bwt)
-    print('Inverse Burrows-Wheeler Transform: ' + str(inverse))
-
+    test = BWT()
+    result = test.encode('hello, world')
+    print(result)
