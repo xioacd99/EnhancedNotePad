@@ -1,4 +1,4 @@
-from ENotePadAlgorithm.strMetric.normDistance import *
+import math
 
 # 多维指标最短路径
 
@@ -15,7 +15,7 @@ from ENotePadAlgorithm.strMetric.normDistance import *
 INF = float('inf') / 4
 
 
-class ShortestPathPro(object):
+class OptimialSchedule(object):
     def __init__(self):
         # 默认权重矩阵
         self.weight = [
@@ -55,12 +55,14 @@ class ShortestPathPro(object):
     def getPath(self, chioces):
         chioces.append(0)
         assign = self.permute(chioces)
-        minPath = None
+        minPath = []
         minCost = INF
-        for i in range(assign):
+        for i in range(len(assign)):
             tmpCost = 0
-            for j in range(assign[j]):
-                tmpCost += getL2NormDistance(self.weight[i][j])
+            for j in range(len(assign[i]) - 1):
+                row= assign[i][j]
+                col=assign[i][j+1]
+                tmpCost += math.sqrt((self.weight[row][col][0])**2 + (self.weight[row][col][1])**2)
             if tmpCost < minCost:
                 minCost = tmpCost
                 minPath = assign[i]
@@ -68,4 +70,6 @@ class ShortestPathPro(object):
 
 
 if __name__ == '__main__':
-    pass
+    test = OptimialSchedule()
+    result = test.getPath([1, 3])
+    print(result)
