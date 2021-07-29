@@ -2,9 +2,6 @@ import pyttsx3, os
 
 
 class ReadInner(object):
-    def __init__(self):
-        pass
-
     def strReadInner(self, str):
         engine = pyttsx3.init()
         engine.say(str)
@@ -13,16 +10,15 @@ class ReadInner(object):
     def fileReadInner(self, filename):
         engine = pyttsx3.init()
 
-        # 设置发音速率，默认值为200
+        # 设置发音速率, 默认值为200
         rate = engine.getProperty('rate')
         engine.setProperty('rate', rate - 30)
 
-        # 设置发音大小，范围为0.0-1.0
+        # 设置发音大小, 范围为 0.0 - 1.0
         volume = engine.getProperty('volume')
         engine.setProperty('volume', 0.6)
 
-        # 需要自己下载语音包安装
-        # 0：汉语女声；1：英语男声；2：英语女声；3：日语女声；4：韩语女声；5：英语女声；6：粤语女声；7：台语女声
+        # 如需扩展，可以自己下载语音包安装 (默认有一个汉语女声)
         voices = engine.getProperty('voices')
         voices = engine.setProperty('voice', voices[0].id)
 
@@ -45,6 +41,5 @@ class ReadInner(object):
             print('id = {} \nname = {} \n'.format(voice.id, voice.name))
 
 if __name__ == '__main__':
-    ri = ReadInner()
-    # ri.strReadInner('hello, world')
-    ri.fileReadInner('F:/.vscode/Github/EnhancedNotePad/ENotePadAlgorithm/algorithmTestData/CNTest.txt')
+    test = ReadInner()
+    test.fileReadInner('F:\\.vscode\\Github\\EnhancedNotePad\\ENotePadAlgorithm\\algorithmTestData\\CNTest.txt')
