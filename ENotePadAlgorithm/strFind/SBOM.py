@@ -1,12 +1,13 @@
 import os
 
-# TODO: 这是一个多对多的匹配，因此和其他的改法不一样，具体可以查看测试文件
+# import time only for performance test
+import time
 
-def hexAddress(object):
-    if object == None:
-        return '_None_'
-    return '0x' + ("%x" % id(object))
+# 单词结尾符号/单词分隔符
+wordSplit = [',', '.', ':', '"', ",", '\n', ' ', '?', '!', '(', ')',
+             '，', '。', '‘', '‘', '“', '”', '？', '！', '（', '）']
 
+# SBOM是多对多字符串匹配
 
 class SBOMTreeNode(object):
     def __init__(self):
@@ -63,23 +64,6 @@ class SBOMSuffixTree(object):
             return currentNode.children[key]
         return None
 
-    def fullPrint(self, currentNode):
-        if currentNode == None:
-            return
-        if currentNode.children == None or len(currentNode.children) == 0:
-            if currentNode == self.root:
-                print('        ' + hexAddress(currentNode) + '(' + str(currentNode.endContent) + ')')
-            return
-        for key, child in currentNode.children.items():
-            if child.isEndPoint == True:
-                print('        ' + hexAddress(currentNode) + ' + ' + key + ' >>> ' + hexAddress(
-                    child) + '(' + str(child.endContent) + ')')
-            else:
-                print('        ' + hexAddress(currentNode) + ' + ' + key + ' >>> ' + hexAddress(
-                    child))
-        for key, child in currentNode.children.items():
-            self.fullPrint(child)
-
 
 class SBOMPrefixTree(object):
     def __init__(self):
@@ -90,13 +74,13 @@ class SBOMPrefixTree(object):
         self.thetaNode.isTheta = True
         self.sNodeTable[self.root] = self.thetaNode
 
-    def __getSNode(self, currentNode):
+    def getSNode(self, currentNode):
         if currentNode in self.sNodeTable:
             return self.sNodeTable[currentNode]
         else:
             return self.thetaNode
 
-    def __setSNode(self, currentNode, sNode):
+    def setSNode(self, currentNode, sNode):
         self.sNodeTable[currentNode] = sNode
 
     def train(self, sample, endInfo):
@@ -118,9 +102,9 @@ class SBOMPrefixTree(object):
         for endItem in endInfo:
             currentNode.suffixTree.train(endItem['suffix'], endItem['content'])
 
-    def __automatizeSeeker(self, currentNode, kNode, jumpKey):
+    def automatizeSeeker(self, currentNode, kNode, jumpKey):
         if kNode.isTheta == True:
-            self.__setSNode(currentNode, self.root)
+            self.setSNode(currentNode, self.root)
         else:
             if jumpKey in kNode.children or jumpKey in kNode.bastards:
                 jNode = None
@@ -128,31 +112,31 @@ class SBOMPrefixTree(object):
                     jNode = kNode.children[jumpKey]
                 else:
                     jNode = kNode.bastards[jumpKey]
-                self.__setSNode(currentNode, jNode)
+                self.setSNode(currentNode, jNode)
             else:
                 kNode.bastards[jumpKey] = currentNode
-                self.__automatizeSeeker(currentNode, self.__getSNode(kNode), jumpKey)
+                self.automatizeSeeker(currentNode, self.getSNode(kNode), jumpKey)
 
-    def __automatizeLoop(self, currentLayerNodes):
+    def automatizeLoop(self, currentLayerNodes):
         if currentLayerNodes == None or len(currentLayerNodes) == 0:
             return
         nextLayerNodes = []
         for currentLayerNodeItem in currentLayerNodes:
             currentLayerNode = currentLayerNodeItem['node']
-            self.__automatizeSeeker(currentLayerNode, self.__getSNode(currentLayerNode.parent),
+            self.automatizeSeeker(currentLayerNode, self.getSNode(currentLayerNode.parent),
                                     currentLayerNodeItem['key'])
             if currentLayerNode.children != None and len(currentLayerNode.children) > 0:
                 for childKey, childNode in currentLayerNode.children.items():
                     nextLayerNodeItem = {'key': childKey, 'node': childNode}
                     nextLayerNodes.append(nextLayerNodeItem)
-        self.__automatizeLoop(nextLayerNodes)
+        self.automatizeLoop(nextLayerNodes)
 
     def automatize(self):
         nextLayerNodes = []
         for childKey, childNode in self.root.children.items():
             nodeItemTmp = {'key': childKey, 'node': childNode}
             nextLayerNodes.append(nodeItemTmp)
-        self.__automatizeLoop(nextLayerNodes)
+        self.automatizeLoop(nextLayerNodes)
 
     def react(self, currentNode, key):
         if currentNode.children != None and key in currentNode.children:
@@ -160,23 +144,6 @@ class SBOMPrefixTree(object):
         if currentNode.bastards != None and key in currentNode.bastards:
             return currentNode.bastards[key]
         return None
-
-    def fullPrint(self, currentNode):
-        if currentNode == None:
-            return
-        for key, child in currentNode.children.items():
-            if child.isEndPoint == True:
-                print(hexAddress(currentNode) + ' + ' + key + ' --> ' + hexAddress(child) + '(end)')
-            else:
-                print(hexAddress(currentNode) + ' + ' + key + ' --> ' + hexAddress(child))
-        for key, child in currentNode.bastards.items():
-            print('    ' + hexAddress(currentNode) + ' + ' + key + ' __> ' + hexAddress(child))
-        if currentNode.suffixTree != None:
-            print('    ' + hexAddress(currentNode) + ' ~~> ' + hexAddress(
-                currentNode.suffixTree.root))
-            currentNode.suffixTree.fullPrint(currentNode.suffixTree.root)
-        for key, child in currentNode.children.items():
-            self.fullPrint(child)
 
 
 class SBOMUtil(object):
@@ -218,7 +185,7 @@ class SBOMUtil(object):
         # automatize
         self.prefixTree.automatize()
 
-    def __saveSearchResult(self, resultDic, sample, location):
+    def saveSearchResult(self, resultDic, sample, location):
         listTmp = []
         if sample in resultDic:
             listTmp = resultDic[sample]
@@ -254,7 +221,7 @@ class SBOMUtil(object):
                     j = 1
                     while True:
                         if currentSuffixNode.isEndPoint == True:
-                            self.__saveSearchResult(result, currentSuffixNode.endContent, offset)
+                            self.saveSearchResult(result, currentSuffixNode.endContent, offset)
                         indexTmp = self.searchWindowLen + offset + j - 1
                         if indexTmp >= contentLen:
                             break
@@ -269,29 +236,77 @@ class SBOMUtil(object):
                 offset = stopIndex
         return result
 
-    def fullPrint(self):
-        self.prefixTree.fullPrint(self.prefixTree.root)
+
+class SBOM(object):
+    # 限制精确匹配 (从0开始, 全字匹配)
+    def strFind(self, source, target, caseSensitive=True):
+        sLen = len(source)
+        tLen = len(target)
+
+        # 如果主串和子串有一方为空或子串长度小于主串则返回空
+        if (sLen == 0 or tLen == 0) or tLen < sLen:
+            return []
+
+        # 如果不区分大小写
+        if not caseSensitive:
+            source = source.lower()
+            target = target.lower()
 
 
-def start(trainSamples, experimentalValues):
-    print('\n********************************')
-    trainsString = ''
-    sbomUtil = SBOMUtil()
-    for sample in trainSamples:
-        trainsString = trainsString + ', ' + sample
-        sbomUtil.train(sample)
-    sbomUtil.prepare()
-    print('Sample: ' + trainsString[2: len(trainsString)])
-    print('\nTree:')
-    sbomUtil.fullPrint()
-    print('\nResults:')
-    for value in experimentalValues:
-        print(value + ': ' + str(sbomUtil.search(value)))
+        idx = []
+        trainsString=''
+        sbomUtil = SBOMUtil()
+        samples = source.split(' ')
+        for sample in samples:
+            trainsString = trainsString+', '+sample
+            sbomUtil.train(sample)
+        sbomUtil.prepare()
+
+        for value in target:
+            idx.append(sbomUtil.search(value)[target])
+
+        return idx
+
+    def fileFind(self, filename, target):
+        results = []
+        if os.path.exists(filename):
+            lineNum = 1
+            with open(filename, 'r', encoding='utf-8') as file:
+                line = file.readline()
+                while line:
+                    idx = self.strFind(line, target)
+                    if idx:
+                        for pos in idx:
+                            results.append([lineNum, pos])
+
+                        # 算法测试输入语句
+                        '''
+                        singleResult = 'The ' + target + ' occurs ' + str(len(idx)) + ' times in line ' + str(
+                            lineNum) + ', which positions are '
+                        for pos in idx:
+                            singleResult += '(' + str(lineNum) + ', ' + str(pos) + ') '
+                        results.append(singleResult)
+                        '''
+
+                    line = file.readline()
+                    lineNum += 1
+        else:
+            with open(filename, 'w', encoding='uft-8') as file:
+                print('Create a new file named %s' % filename)
+        return results
+
+
 
 
 
 if __name__ == '__main__':
-    start(['announce'], ['announce', 'announ', 'announce123', '123announce', 'announceannounce',
-                         'announce123announc456nnounce789announce123announce'])
-    start(['ab', 'bab', 'bca', 'caa'], ['abccab'])
-    start(['aa'], ['aaaaaaaaa'])
+    start = time.time()
+
+    # write your test code
+    test = SBOM()
+    ans = test.fileFind(
+        'F:\\.vscode\\Github\\EnhancedNotePad\\ENotePadAlgorithm\\algorithmTestData\\BigTest.txt', 'be')
+    # end
+
+    end = time.time()
+    print('using time: %s seconds' % (end - start))

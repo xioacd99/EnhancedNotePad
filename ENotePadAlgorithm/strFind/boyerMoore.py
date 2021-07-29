@@ -1,5 +1,9 @@
 import os
 
+# import time only for performance test
+import time
+
+# 单词结尾符号/单词分隔符
 wordSplit = [',', '.', ':', '"', ",", '\n', ' ', '?', '!', '(', ')',
              '，', '。', '‘', '‘', '“', '”', '？', '！', '（', '）']
 
@@ -80,11 +84,20 @@ class BoyerMoore(object):
             return 0
         return self.goodSuffixTable[matchedPart]
 
-    def strSearch(self, source, target, pos=0):
+    def strFind(self, source, target, pos=0, fullWord=True, caseSensitive=True):
         sLen = len(source)
         tLen = len(target)
-        result = []
 
+        # 如果主串和子串有一方为空或子串长度小于主串则返回空
+        if (sLen == 0 or tLen == 0) or tLen < sLen:
+            return []
+
+        # 如果不区分大小写
+        if not caseSensitive:
+            source = source.lower()
+            target = target.lower()
+
+        idx = []
         self.getBadCharTable(target)
         self.getGoodSuffixTable(target)
 
@@ -103,44 +116,61 @@ class BoyerMoore(object):
                     break
                 else:
                     matchedPart = curChar + matchedPart
-            if isFind == True:
+            if isFind:
                 step = 1
-                wordEnd = pos
-                while True:
-                    if source[wordEnd] in wordSplit:
-                        break
-                    else:
-                        wordEnd += 1
-                if wordEnd - pos == len(target):
-                    result.append(pos)
+                wordStart = pos
+                # 是否全字匹配
+                if fullWord:
+                    wordEnd = pos
+                    while True:
+                        if source[wordEnd] in wordSplit:
+                            break
+                        else:
+                            wordEnd += 1
+                    if wordEnd - wordStart == len(target):
+                        idx.append(wordStart)
+                else:
+                    idx.append(wordStart)
             pos += step
-        return result
+        return idx
 
-    def fileBMFind(self, filename, target):
+    def fileFind(self, filename, target):
         results = []
         if os.path.exists(filename):
             lineNum = 1
-            with open(filename, 'r') as file:
+            with open(filename, 'r', encoding='utf-8') as file:
                 line = file.readline()
                 while line:
-                    idx = self.strSearch(line, target)
+                    idx = self.strFind(line, target)
                     if idx:
-                        # 生成查询字符串前半部分
+                        for pos in idx:
+                            results.append([lineNum, pos])
+
+                        # 算法测试输入语句
+                        '''
                         singleResult = 'The ' + target + ' occurs ' + str(len(idx)) + ' times in line ' + str(
                             lineNum) + ', which positions are '
-                        # 添加每行的具体位置
                         for pos in idx:
                             singleResult += '(' + str(lineNum) + ', ' + str(pos) + ') '
                         results.append(singleResult)
+                        '''
+
                     line = file.readline()
                     lineNum += 1
         else:
-            with open(filename, 'w') as file:
+            with open(filename, 'w', encoding='uft-8') as file:
                 print('Create a new file named %s' % filename)
         return results
 
+
 if __name__ == '__main__':
-    bm = BoyerMoore()
-    ans = bm.fileBMFind('ENTest.txt', 'be')
-    for singleResult in ans:
-        print(singleResult)
+    start = time.time()
+
+    # write your test code
+    test = BoyerMoore()
+    ans = test.fileFind(
+        'F:\\.vscode\\Github\\EnhancedNotePad\\ENotePadAlgorithm\\algorithmTestData\\BigTest.txt', 'be')
+    # end
+
+    end = time.time()
+    print('using time: %s seconds' % (end - start))

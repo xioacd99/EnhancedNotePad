@@ -1,5 +1,8 @@
 import os
 
+# import time only for performance test
+import time
+
 wordSplit = [',', '.', ':', '"', ",", '\n', ' ', '?', '!', '(', ')',
              '，', '。', '‘', '‘', '“', '”', '？', '！', '（', '）']
 
@@ -29,14 +32,14 @@ class Horspool(object):
                 if charTmp in self.charLocationTable:
                     innerResult = self.charLocationTable[charTmp]
                 locationsTmp = charLocations[charTmp]
-                finded = False
+                isFind = False
                 for j in range(len(locationsTmp), 0, -1):
                     locationTmp = locationsTmp[j - 1]
                     if locationTmp <= i - 1:
                         innerResult[str(i - 1)] = locationTmp
-                        finded = True
+                        isFind = True
                         break
-                if finded == False:
+                if not isFind:
                     innerResult[str(i - 1)] = -1
                 self.charLocationTable[charTmp] = innerResult
 
@@ -47,19 +50,20 @@ class Horspool(object):
         else:
             return matcherLen
 
-    def strFind(self, source, target, pos=0, fullWord=True, caseSensitive=False):
-        # 如果有一方为空，则查询无效
-        if len(source) == 0 or len(target) == 0:
+    def strFind(self, source, target, pos=0, fullWord=True, caseSensitive=True):
+        sLen = len(source)
+        tLen = len(target)
+
+        # 如果主串和子串有一方为空或子串长度小于主串则返回空
+        if (sLen == 0 or tLen == 0) or tLen < sLen:
             return []
-        # 是否区分大小写
-        if caseSensitive:
+
+        # 如果不区分大小写
+        if not caseSensitive:
             source = source.lower()
             target = target.lower()
 
-        sLen = len(source)
-        tLen = len(target)
         idx = []
-
         self.buildCharLocationTable(target)
 
         while pos + tLen <= sLen:
@@ -75,17 +79,19 @@ class Horspool(object):
                     break
             if isFind:
                 step = 1
+                wordStart = pos
+                # 是否全字匹配
                 if fullWord:
-                    wordEnd = pos
+                    wordEnd = wordStart
                     while True:
                         if source[wordEnd] in wordSplit:
                             break
                         else:
                             wordEnd += 1
-                    if wordEnd - pos == tLen:
-                        idx.append(pos)
+                    if wordEnd - wordStart == tLen:
+                        idx.append(wordStart)
                 else:
-                    idx.append(pos)
+                    idx.append(wordStart)
             pos += step
         return idx
 
@@ -93,26 +99,39 @@ class Horspool(object):
         results = []
         if os.path.exists(filename):
             lineNum = 1
-            with open(filename, 'r') as file:
+            with open(filename, 'r', encoding='utf-8') as file:
                 line = file.readline()
                 while line:
                     idx = self.strFind(line, target)
                     if idx:
-                        # 生成查询字符串前半部分
+                        for pos in idx:
+                            results.append([lineNum, pos])
+
+                        # 算法测试输入语句
+                        '''
                         singleResult = 'The ' + target + ' occurs ' + str(len(idx)) + ' times in line ' + str(
                             lineNum) + ', which positions are '
-                        # 添加每行的具体位置
                         for pos in idx:
                             singleResult += '(' + str(lineNum) + ', ' + str(pos) + ') '
                         results.append(singleResult)
+                        '''
+
                     line = file.readline()
                     lineNum += 1
         else:
-            with open(filename, 'w') as file:
+            with open(filename, 'w', encoding='uft-8') as file:
                 print('Create a new file named %s' % filename)
         return results
 
+
 if __name__ == '__main__':
-    hp = Horspool()
-    ans = hp.strFind('be being be being ', 'be')
-    print(ans)
+    start = time.time()
+
+    # write your test code
+    test = Horspool()
+    ans = test.fileFind(
+        'F:\\.vscode\\Github\\EnhancedNotePad\\ENotePadAlgorithm\\algorithmTestData\\BigTest.txt', 'be')
+    # end
+
+    end = time.time()
+    print('using time: %s seconds' % (end - start))

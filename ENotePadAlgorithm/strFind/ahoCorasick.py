@@ -1,13 +1,14 @@
 import os
 
-def hexAddress(object):
-    if object == None:
-        return '_None_'
-    return '0x' + ("%x" % id(object))
+# import time only for performance test
+import time
+
+# 单词结尾符号/单词分隔符
+wordSplit = [',', '.', ':', '"', ",", '\n', ' ', '?', '!', '(', ')',
+             '，', '。', '‘', '‘', '“', '”', '？', '！', '（', '）']
 
 
 class ACTireTreeNode(object):
-
     def __init__(self):
         self.children = {}
         self.parent = None
@@ -131,21 +132,6 @@ class ACTireTree(object):
             return self.__buildBlankResult()
         return self.__react(currentNode, key)
 
-    def fullPrint(self, currentNode):
-        if currentNode == None:
-            return
-        for key, child in currentNode.children.items():
-            if child.isEndPoint == True:
-                print(
-                    hexAddress(currentNode) + ' + ' + key + ' --> ' + hexAddress(child) + '(' + str(
-                        child.endContent) + ')')
-            else:
-                print(hexAddress(currentNode) + ' + ' + key + ' --> ' + hexAddress(child))
-        if currentNode.bastard != None:
-            print('    ' + hexAddress(currentNode) + ' __> ' + hexAddress(currentNode.bastard))
-        for key, child in currentNode.children.items():
-            self.fullPrint(child)
-
 
 class AhoCorasickUtil(object):
     def __init__(self):
@@ -192,29 +178,73 @@ class AhoCorasickUtil(object):
             nodeTmp = nextNode
         return result
 
-    def fullPrint(self):
-        self.__acTree.fullPrint(self.__acTree.root)
 
+class AhoCorasick(object):
+    # 限制精确匹配 (从0开始, 全字匹配)
+    def strFind(self, source, target, caseSensitive=True):
+        sLen = len(source)
+        tLen = len(target)
 
-def start(trainSamples, experimentalValues):
-    print('\n********************************')
-    trainsString = ''
-    acUtil = AhoCorasickUtil()
-    for sample in trainSamples:
-        trainsString = trainsString + ', ' + sample
-        acUtil.train(sample)
-    acUtil.prepare()
-    print('Sample: ' + trainsString[2: len(trainsString)])
-    print('\nACTree:')
-    acUtil.fullPrint()
-    print('\nResults:')
-    for value in experimentalValues:
-        print(value + ': ' + str(acUtil.search(value)))
-    print('********************************\n')
+        # 如果主串和子串有一方为空或子串长度小于主串则返回空
+        if (sLen == 0 or tLen == 0) or tLen < sLen:
+            return []
+
+        # 如果不区分大小写
+        if not caseSensitive:
+            source = source.lower()
+            target = target.lower()
+
+        idx = []
+        trainString = ''
+        acUtil = AhoCorasickUtil()
+        samples = source.split(' ')
+        for sample in samples:
+            trainString = trainString + ', ' + sample
+            acUtil.train(sample)
+        acUtil.prepare()
+
+        for value in target:
+            idx.append(acUtil.search(value)[target])
+
+        return idx
+
+    def fileFind(self, filename, target):
+        results = []
+        if os.path.exists(filename):
+            lineNum = 1
+            with open(filename, 'r', encoding='utf-8') as file:
+                line = file.readline()
+                while line:
+                    idx = self.strFind(line, target)
+                    if idx:
+                        for pos in idx:
+                            results.append([lineNum, pos])
+
+                        # 算法测试输入语句
+                        '''
+                        singleResult = 'The ' + target + ' occurs ' + str(len(idx)) + ' times in line ' + str(
+                            lineNum) + ', which positions are '
+                        for pos in idx:
+                            singleResult += '(' + str(lineNum) + ', ' + str(pos) + ') '
+                        results.append(singleResult)
+                        '''
+
+                    line = file.readline()
+                    lineNum += 1
+        else:
+            with open(filename, 'w', encoding='uft-8') as file:
+                print('Create a new file named %s' % filename)
+        return results
 
 
 if __name__ == '__main__':
-    # start(['hers', 'his', 'she'], ['ushers', 'shersushis', 'shersushishe'])
-    # start(['nihao', 'hao', 'ao', 'a'], ['anihao'])
-    # start(['ab', 'bab', 'bca', 'caa'], ['abccab'])
-    start(['aaa'], ['aaaaaaaaa'])
+    start = time.time()
+
+    # write your test code
+    test = AhoCorasick()
+    ans = test.fileFind(
+        'F:\\.vscode\\Github\\EnhancedNotePad\\ENotePadAlgorithm\\algorithmTestData\\BigTest.txt', 'be')
+    # end
+
+    end = time.time()
+    print('using time: %s seconds' % (end - start))

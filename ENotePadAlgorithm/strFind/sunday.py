@@ -1,38 +1,41 @@
 import os
 
+# import time only for performance test
+import time
+
 # 单词结尾符号/单词分隔符
 wordSplit = [',', '.', ':', '"', ",", '\n', ' ', '?', '!', '(', ')',
              '，', '。', '‘', '‘', '“', '”', '？', '！', '（', '）']
 
 class Sunday(object):
-    def __init__(self):
-        pass
+    def strFind(self, source, target, pos=0, fullWord=True, caseSensitive=True):
+        sLen = len(source)
+        tLen = len(target)
 
-    def strSundayFind(self, source, target, pos=0, fullWord=True, caseSensitive=False):
-        # 如果有一方为空，则查询无效
-        if len(source) == 0 or len(target) == 0:
+        # 如果主串和子串有一方为空或子串长度小于主串则返回空
+        if (sLen == 0 or tLen == 0) or tLen < sLen:
             return []
-        # 是否区分大小写
-        if caseSensitive:
+
+        # 如果不区分大小写
+        if not caseSensitive:
             source = source.lower()
             target = target.lower()
 
-        sLen = len(source)
-        tLen = len(target)
         idx = []
-
         i = 0
+
         while i <= sLen - tLen:
             if source[i:i + tLen] == target:
+                wordStart = i
                 # 是否全字匹配
                 if fullWord:
-                    wordEnd = i
+                    wordEnd = wordStart
                     while True:
                         if source[wordEnd] in wordSplit:
                             break
                         else:
                             wordEnd += 1
-                    if wordEnd - i == tLen:
+                    if wordEnd - wordStart == tLen:
                         idx.append(i)
                 else:
                     idx.append(i)
@@ -45,30 +48,42 @@ class Sunday(object):
                     i += (tLen - rpos)
         return idx
 
-    def fileSundayFind(self, filename, target):
+    def fileFind(self, filename, target):
         results = []
         if os.path.exists(filename):
             lineNum = 1
-            with open(filename, 'r') as file:
+            with open(filename, 'r', encoding='utf-8') as file:
                 line = file.readline()
                 while line:
-                    idx = self.strSundayFind(line, target)
+                    idx = self.strFind(line, target)
                     if idx:
-                        # 生成查询字符串前半部分
+                        for pos in idx:
+                            results.append([lineNum, pos])
+
+                        # 算法测试输入语句
+                        '''
                         singleResult = 'The ' + target + ' occurs ' + str(len(idx)) + ' times in line ' + str(
                             lineNum) + ', which positions are '
-                        # 添加每行的具体位置
                         for pos in idx:
                             singleResult += '(' + str(lineNum) + ', ' + str(pos) + ') '
                         results.append(singleResult)
+                        '''
+
                     line = file.readline()
                     lineNum += 1
         else:
-            with open(filename, 'w') as file:
+            with open(filename, 'w', encoding='uft-8') as file:
                 print('Create a new file named %s' % filename)
         return results
 
 if __name__ == '__main__':
-    bf = Sunday()
-    ans = bf.strSundayFind('be being bebe ', 'be')
-    print(ans)
+    start = time.time()
+
+    # write your test code
+    test = Sunday()
+    ans = test.fileFind(
+        'F:\\.vscode\\Github\\EnhancedNotePad\\ENotePadAlgorithm\\algorithmTestData\\BigTest.txt', 'be')
+    # end
+
+    end = time.time()
+    print('using time: %s seconds' % (end - start))

@@ -9,16 +9,15 @@ wordSplit = [',', '.', ':', '"', ",", '\n', ' ', '?', '!', '(', ')',
 
 
 class BruteForce(object):
-    def __init__(self):
-        pass
-
     def strFind(self, source, target, pos=0, fullWord=True, caseSensitive=True):
         sLen = len(source)
         tLen = len(target)
 
+        # 如果主串和子串有一方为空或子串长度小于主串则返回空
         if (sLen == 0 or tLen == 0) or tLen < sLen:
             return []
 
+        # 如果不区分大小写
         if not caseSensitive:
             source = source.lower()
             target = target.lower()
@@ -37,8 +36,9 @@ class BruteForce(object):
 
             if j == tLen:
                 wordStart = i - j
+                # 是否全字匹配
                 if fullWord:
-                    wordEnd = i
+                    wordEnd = wordStart
                     while True:
                         if source[wordEnd] in wordSplit:
                             break
@@ -84,8 +84,8 @@ if __name__ == '__main__':
     start = time.time()
 
     # write your test code
-    bf = BruteForce()
-    ans = bf.fileFind(
+    test = BruteForce()
+    ans = test.fileFind(
         'F:\\.vscode\\Github\\EnhancedNotePad\\ENotePadAlgorithm\\algorithmTestData\\BigTest.txt', 'be')
     # end
 
