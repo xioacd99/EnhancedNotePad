@@ -3,14 +3,11 @@ import os
 
 
 class NormDistanceCheck(object):
-    def __init__(self):
-        pass
-
     def fileCheck(self, lFile, rFile):
         results = 0
         if os.path.exists(lFile) and os.path.exists(rFile):
-            with open(lFile, 'r') as lFin:
-                with open(rFile, 'r') as rFin:
+            with open(lFile, 'r', encoding='utf-8') as lFin:
+                with open(rFile, 'r', encoding='utf-8') as rFin:
                     lLine = lFin.readline()
                     rLine = rFin.readline()
                 while lLine and rLine:

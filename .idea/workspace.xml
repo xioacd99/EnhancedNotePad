@@ -28,21 +28,21 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\.vscode\Github\EnhancedNotePad\ENotePadAlgorithm\others" />
-      <recent name="F:\.vscode\Github\EnhancedNotePad" />
-      <recent name="F:\.vscode\Github\EnhancedNotePad\ENotePadAlgorithm\strFind\test" />
-      <recent name="F:\.vscode\Github\EnhancedNotePad\ENotePadAlgorithm\strSyntax\test" />
-      <recent name="F:\.vscode\Github\EnhancedNotePad\ENotdPadAlgorithm\strCount" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\.vscode\Github\EnhancedNotePad\ENotePadAlgorithm\strRead\test" />
       <recent name="F:\.vscode\Github\EnhancedNotePad\ENotePadAlgorithm\strFind\test" />
       <recent name="F:\.vscode\Github\EnhancedNotePad\ENotePadAlgorithm\strFind" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\.vscode\Github\EnhancedNotePad\UI" />
+      <recent name="F:\.vscode\Github\EnhancedNotePad" />
+      <recent name="F:\.vscode\Github\EnhancedNotePad\ENotePadAlgorithm\others" />
+      <recent name="F:\.vscode\Github\EnhancedNotePad\ENotePadAlgorithm\strFind\test" />
+      <recent name="F:\.vscode\Github\EnhancedNotePad\ENotePadAlgorithm\strSyntax\test" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.optimalSchedule">
-    <configuration name="LZ78" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.SHA1">
+    <configuration name="HMAC" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EnhancedNotePad" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -50,11 +50,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strZip" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strEncrypt" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strZip/LZ78.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strEncrypt/HMAC.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -63,7 +63,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="fanoCode" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="MD5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EnhancedNotePad" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -71,11 +71,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strZip" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strEncrypt" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strZip/fanoCode.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strEncrypt/MD5.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -84,7 +84,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="huffmanCode" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Morse" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EnhancedNotePad" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,11 +92,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strZip" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strEncrypt" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strZip/huffmanCode.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strEncrypt/Morse.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -105,7 +105,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="optimalSchedule" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="RSA" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EnhancedNotePad" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -113,11 +113,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/others" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strEncrypt" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/others/optimalSchedule.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strEncrypt/RSA.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,7 +126,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="shannonCode" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="SHA1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EnhancedNotePad" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -134,11 +134,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strZip" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ENotePadAlgorithm/strEncrypt" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strZip/shannonCode.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ENotePadAlgorithm/strEncrypt/SHA1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.optimalSchedule" />
-        <item itemvalue="Python.shannonCode" />
-        <item itemvalue="Python.fanoCode" />
-        <item itemvalue="Python.huffmanCode" />
-        <item itemvalue="Python.LZ78" />
+        <item itemvalue="Python.SHA1" />
+        <item itemvalue="Python.RSA" />
+        <item itemvalue="Python.Morse" />
+        <item itemvalue="Python.MD5" />
+        <item itemvalue="Python.HMAC" />
       </list>
     </recent_temporary>
   </component>
@@ -174,9 +174,10 @@
     </state>
     <state x="1041" y="252" key="#com.intellij.fileTypes.FileTypeChooser/62.0.1474.864@62.0.1474.864" timestamp="1627476684398" />
     <state x="1042" y="252" key="#com.intellij.fileTypes.FileTypeChooser/66.0.1470.864@66.0.1470.864" timestamp="1627028304180" />
-    <state x="795" y="233" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1627269989157">
-      <screen x="63" y="0" width="1473" height="864" />
+    <state x="794" y="233" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1627544735043">
+      <screen x="62" y="0" width="1474" height="864" />
     </state>
+    <state x="794" y="233" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.0.1474.864@62.0.1474.864" timestamp="1627544735043" />
     <state x="795" y="233" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/63.0.1473.864@63.0.1473.864" timestamp="1627269989157" />
     <state x="925" y="358" key="#com.jetbrains.python.refactoring.move.PyMakeFunctionTopLevelDialog" timestamp="1627296992394">
       <screen x="62" y="0" width="1474" height="864" />
@@ -186,28 +187,28 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="557" y="169" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1627004411814" />
-    <state width="1336" height="242" key="GridCell.Tab.0.bottom" timestamp="1627530042258">
+    <state width="1336" height="198" key="GridCell.Tab.0.bottom" timestamp="1627548623046">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1336" height="242" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1627530042258" />
+    <state width="1336" height="198" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1627548623046" />
     <state width="1336" height="190" key="GridCell.Tab.0.bottom/63.0.1473.864@63.0.1473.864" timestamp="1627295395368" />
     <state width="1319" height="176" key="GridCell.Tab.0.bottom/66.0.1470.864@66.0.1470.864" timestamp="1627050040648" />
-    <state width="1336" height="242" key="GridCell.Tab.0.center" timestamp="1627530042258">
+    <state width="1336" height="198" key="GridCell.Tab.0.center" timestamp="1627548623046">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1336" height="242" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1627530042258" />
+    <state width="1336" height="198" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1627548623046" />
     <state width="1336" height="190" key="GridCell.Tab.0.center/63.0.1473.864@63.0.1473.864" timestamp="1627295395368" />
     <state width="1319" height="176" key="GridCell.Tab.0.center/66.0.1470.864@66.0.1470.864" timestamp="1627050040648" />
-    <state width="1336" height="242" key="GridCell.Tab.0.left" timestamp="1627530042258">
+    <state width="1336" height="198" key="GridCell.Tab.0.left" timestamp="1627548623046">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1336" height="242" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1627530042258" />
+    <state width="1336" height="198" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1627548623046" />
     <state width="1336" height="190" key="GridCell.Tab.0.left/63.0.1473.864@63.0.1473.864" timestamp="1627295395367" />
     <state width="1319" height="176" key="GridCell.Tab.0.left/66.0.1470.864@66.0.1470.864" timestamp="1627050040648" />
-    <state width="1336" height="242" key="GridCell.Tab.0.right" timestamp="1627530042258">
+    <state width="1336" height="198" key="GridCell.Tab.0.right" timestamp="1627548623046">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1336" height="242" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1627530042258" />
+    <state width="1336" height="198" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1627548623046" />
     <state width="1336" height="190" key="GridCell.Tab.0.right/63.0.1473.864@63.0.1473.864" timestamp="1627295395368" />
     <state width="1319" height="176" key="GridCell.Tab.0.right/66.0.1470.864@66.0.1470.864" timestamp="1627050040648" />
     <state width="1336" height="242" key="GridCell.Tab.1.bottom" timestamp="1627530042258">
@@ -234,18 +235,18 @@
     <state width="1336" height="242" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1627530042258" />
     <state width="1336" height="241" key="GridCell.Tab.1.right/63.0.1473.864@63.0.1473.864" timestamp="1627271532195" />
     <state width="1319" height="219" key="GridCell.Tab.1.right/66.0.1470.864@66.0.1470.864" timestamp="1627050040631" />
-    <state x="540" y="107" key="SettingsEditor" timestamp="1627477864120">
+    <state x="540" y="107" key="SettingsEditor" timestamp="1627544280723">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="540" y="107" key="SettingsEditor/62.0.1474.864@62.0.1474.864" timestamp="1627477864120" />
+    <state x="540" y="107" key="SettingsEditor/62.0.1474.864@62.0.1474.864" timestamp="1627544280723" />
     <state x="281" y="72" key="SettingsEditor/66.0.1470.864@66.0.1470.864" timestamp="1627034697576" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1627047962922">
       <screen x="66" y="0" width="1470" height="864" />
     </state>
     <state width="600" height="428" key="javadoc.popup/66.0.1470.864@66.0.1470.864" timestamp="1627047962922" />
-    <state x="698" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1627529859463">
+    <state x="698" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1627546280883">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="698" y="185" width="672" height="678" key="search.everywhere.popup/62.0.1474.864@62.0.1474.864" timestamp="1627529859463" />
+    <state x="698" y="185" width="672" height="678" key="search.everywhere.popup/62.0.1474.864@62.0.1474.864" timestamp="1627546280883" />
   </component>
 </project>

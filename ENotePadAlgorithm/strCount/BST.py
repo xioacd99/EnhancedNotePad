@@ -1,6 +1,8 @@
-# 二叉搜索树节点
-class BSTNode:
+import os
 
+
+# 二叉搜索树节点
+class BSTNode(object):
     def __init__(self):
         self.left = None
         self.right = None
@@ -9,12 +11,12 @@ class BSTNode:
 
 
 # 二叉搜索树生成并统计
-class BSTree:
+class BSTree(object):
 
     def __init__(self):
         self.root = None
 
-    def Insert(self, input_word):
+    def insert(self, input_word):
         node = BSTNode()
         node.word = input_word
 
@@ -25,13 +27,15 @@ class BSTree:
             cur_node = self.root
             while True:
                 if input_word < cur_node.word:
-                    if cur_node.left: cur_node = cur_node.left
+                    if cur_node.left:
+                        cur_node = cur_node.left
                     else:
                         cur_node.left = node
                         node.count += 1
                         break
                 elif input_word > cur_node.word:
-                    if cur_node.right: cur_node = cur_node.right
+                    if cur_node.right:
+                        cur_node = cur_node.right
                     else:
                         cur_node.right = node
                         node.count += 1
@@ -40,7 +44,7 @@ class BSTree:
                     cur_node.count += 1
                     break
 
-    def input_text(self,text_src):
+    def input_text(self, text_src):
         fo = open(text_src, "r")
         text = fo.read()
 
@@ -51,12 +55,13 @@ class BSTree:
         wordList = text.split()
 
         for word in wordList:
-            self.Insert(word)
+            self.insert(word)
 
         fo.close()
 
     def MidOrder(self, node):
-        if node is None: return
+        if node is None:
+            return
         else:
             self.MidOrder(node.left)
             self.stat[node.word] = node.count
@@ -72,10 +77,17 @@ class BSTree:
 # 使用字典实现，统计信息以[单词：频数]的字典进行保存
 # 基于二叉搜索树的构建实现单词频数的统计 输出结果已排序 时间复杂度为 O(n*logn)
 
-def BST_word_count(text_src):
-    bst = BSTree()
-    bst.input_text(text_src)
-    return bst.output()
-
-
-# print(BST_word_count("./essay_text.txt"))
+class BST(object):
+    def fileCount(self, filename, caseSensitive=True):
+        if os.path.exists(filename):
+            with open(filename, 'r', encoding='utf-8') as file:
+                text = file.read()
+                if not caseSensitive:
+                    text = text.lower()
+                    bst = BSTree()
+                    bst.input_text(text)
+                    return bst.output()
+        else:
+            with open(filename, 'w', encoding='uft-8') as file:
+                print('Create a new file named %s' % filename)
+        return {}

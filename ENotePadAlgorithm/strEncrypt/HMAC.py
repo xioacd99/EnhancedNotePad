@@ -8,7 +8,7 @@ class HMACSHA1(object):
     blockSize = 0
     outputSize = 0
 
-    def __init__(self, msg, key, func=SHA1, blockSize=64, outputSize=20):
+    def __init__(self, msg, key='hello, world', func=SHA1, blockSize=64, outputSize=20):
         if type(msg) == str:
             msg = msg.encode()
         if type(key) == str:
@@ -40,11 +40,11 @@ class HMACSHA1(object):
         result = self.func(opad + result).digest()
         return result
 
-    def hexdigest(self):
+    def strEncrypt(self):
         digest = self.digest()
         return digest.hex()
 
 if __name__ == '__main__':
-    hmacSHA1 = HMACSHA1('1','hello, world')
-    ans = hmacSHA1.hexdigest()
+    hmacSHA1 = HMACSHA1('12345')
+    ans = hmacSHA1.strEncrypt()
     print(ans)

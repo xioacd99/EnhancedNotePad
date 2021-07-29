@@ -1,3 +1,4 @@
+
 def getHammingDistance(a, b):
     aLen = len(a)
     bLen = len(b)

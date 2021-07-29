@@ -1,3 +1,4 @@
+
 def getL0NormDistance(a, b):
     aSpace = 0
     bSpace = 0

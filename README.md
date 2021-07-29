@@ -1,7 +1,7 @@
 <!--
  * @Author: xioacd99
  * @Date: 2021-07-22 23:46:42
- * @LastEditTime: 2021-07-28 21:39:13
+ * @LastEditTime: 2021-07-29 15:43:20
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \.vscode\Github\EnhancedNotePad\README.md
@@ -36,7 +36,10 @@
 4. jieba：分词库（词云图）
 5. qtawesome：图标库
 6. wordcloud：词云图处理
-7. docx：python-word
+7. docx，docxcompose：python-word
+8. MyQR：QR处理库（url转二维码）
+9. requests：处理、解析请求（爬虫爬取对应图片）
+10. 
 
 ## 如何参与项目？
 

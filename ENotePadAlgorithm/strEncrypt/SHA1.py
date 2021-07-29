@@ -123,7 +123,7 @@ class SHA1(object):
         digest = bytearray.fromhex(self.hexdigest())
         return digest
 
-    def hexdigest(self):
+    def strEncrypt(self):
         self.__padding()
         while len(self.msg) >= 64:
             self.__groupLoop()
@@ -142,5 +142,5 @@ class SHA1(object):
 
 if __name__ == '__main__':
     sha1 = SHA1('1')
-    ans = sha1.hexdigest()
-    print(ans)
+    result = sha1.strEncrypt()
+    print(result)
