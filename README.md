@@ -39,7 +39,6 @@
 7. docx，docxcompose：python-word
 8. MyQR：QR处理库（url转二维码）
 9. requests：处理、解析请求（爬虫爬取对应图片）
-10. 
 
 ## 如何参与项目？
 
